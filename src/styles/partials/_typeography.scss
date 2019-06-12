@@ -1,0 +1,46 @@
+// typeography.scss 			./styles/partials/
+////////////////////////////////////////////////////////////
+
+
+
+// Headings
+////////////////////////////////////////////////////////////
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $roboto;
+  color: $black;
+}
+
+
+// Paragraphs
+////////////////////////////////////////////////////////////
+body {
+  font-family: $open-sans;
+  color: $blk-60;
+}
+
+
+// Links
+////////////////////////////////////////////////////////////
+a {
+  text-decoration: none;
+  color: $clr-links-alt;
+  transition: $link-transition;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  &.inactive {
+    color: $blk-20;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      cursor: default;
+    }
+  }
+}
+

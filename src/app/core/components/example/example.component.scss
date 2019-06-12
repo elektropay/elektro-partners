@@ -1,0 +1,73 @@
+// example.component.scss            ~/app/core/components/example
+////////////////////////////////////////////////////////////
+
+
+
+@import "../../../../styles/config";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  max-width: rem-calc(400);
+  min-height: rem-calc(400);
+  text-align: center;
+  border: rem-calc(1) solid $blk-30;
+  border-radius: rem-calc(10);
+  padding: rem-calc(20 5);
+  background-color: $blk-5;
+}
+
+
+// Page heading styles
+h1 {
+  margin-bottom: rem-calc(20);
+}
+
+
+// Page name styles
+h2 {
+  width: 100%;
+  color: $white;
+  line-height: 1;
+  padding: rem-calc(5 0);
+  background-color: $alizarin;
+  text-align: center;
+  margin-bottom: rem-calc(10);
+}
+
+
+// Paragraph styles
+p {
+  margin-bottom: rem-calc(10);
+}
+
+
+// Image styles
+img {
+  width: 100%;
+  max-width: rem-calc(200);
+  margin-bottom: rem-calc(20);
+}
+
+
+// Navigation styles
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  a {
+    color: $white;
+    background-color: $turquoise;
+    border: rem-calc(1) solid $asphalt;
+    border-radius: rem-calc(3);
+    padding: rem-calc(2 4);
+    &.active,
+    &:hover {
+      background-color: $asphalt;
+      text-decoration: none;
+    }
+  }
+}

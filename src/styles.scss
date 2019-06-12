@@ -1,0 +1,20 @@
+// styles.scss 			~/
+// This is the main scss file. These styles are imported
+// once and are global to the app.
+////////////////////////////////////////////////////////////
+
+
+// Get the config. This is needed in every component scss file.
+@import "./styles/config";
+
+// Normalize
+@import "~normalize-scss/sass/normalize/import-now";
+
+// Get the global css file
+@import "./styles/global";
+
+// Get partials
+@import "./styles/partials/all";
+
+// Get the shame css file
+@import "./styles/shame";

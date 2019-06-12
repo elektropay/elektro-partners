@@ -1,0 +1,19 @@
+// about.component.scss            ~/app/core/routes/about
+////////////////////////////////////////////////////////////
+
+
+
+@import "../../../../styles/config";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+app-example ::ng-deep h2 {
+  background-color: $turquoise;
+}
